@@ -1,12 +1,15 @@
 # React
 
 <img
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-width="80px"
+src="https://ms314006.github.io/static/b7a8f321b0bbc07ca9b9d22a7a505ed5/97b31/React.jpg"
+height="120px"
 style="margin-left: 20px">
 
-+ *用來實作使用者介面 ( UI ) 的 JavaScript 函式庫* - by [React官網](https://reactjs.org/)
-+ React 實際上僅為 JS 函式庫，需搭配其他第三方函式庫 (如狀態管理) 完善框架體系
+## 學前須知
+
++ React 是 *用來實作使用者介面 ( UI ) 的 JavaScript 函式庫* - by [React官網](https://reactjs.org/)
++ React 實際上僅為 JS 函式庫，需搭配其他第三方函式庫 (如狀態管理) 完善框架體系。
++ 閱讀本章需有熟練 JavaScript 及 ES6 語言標準，及 HTML 和 CSS 基礎。
 
 ## 簡介
 
@@ -36,3 +39,38 @@ style="margin-left: 20px">
   + 不同於傳統數據綁定，更容易使用
 + 使用 React語法進行移動端 :
   + 學會React，可使用 React Nactive 開發移動端。
+
+## 安裝
+
++ 安裝 [NodeJS](https://nodejs.org/en/)。
++ 建立 React App 透過 :
+
+```bash
+$ npx create-react-app my-app
+
+// 官方提供的開發包，省去了手動建置環境的時間。
+```
+
++ 開始你的 React之旅
+
+## Hello World
+
++ 引入 React 模組，使編譯後的 JS 檔案支援 JSX 語法 (注: 新版本已經被自動導入，可選擇性加入)。
+
+```js
+import React from "react";
+```
+
++ 引入 ReactDOM 模組，用於渲染。
+
+```js
+import ReactDOM from "react-dom";
+```
+
++ 透過 ReactDOM 的 render 方法，渲染 \<div>Hello World\</div> 到 id 為 root 的節點之下。
+
+```js
+ReactDOM.render(<div>Hello World</div>, document.getElementbyId("root"))
+```
+
+## 下一篇 : [JSX 語法](./1-JSX.md)
