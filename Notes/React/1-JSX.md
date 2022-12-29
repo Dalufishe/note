@@ -5,10 +5,12 @@ src="https://blog.waterstrong.me/assets/jsx-syntax/jsx_logo.png"
 height="120px"
 style="margin-left: 20px">
 
+---
+
 ## 概念
 
 + JSX = JS + XML，為 JavaScript 的擴充。
-+ JSX 可使開發者在 JS 中 撰寫 XML 語法，簡化開發難度和提高開發效率。
++ JSX 可使開發者在 JS 中 撰寫 XML 語法進行開發，簡化開發難度和提高開發效率。
 + JSX 會通過 Babel 編譯器將 JSX 程序 轉為純 JS 程序。
   + [注] : Babel，一種編譯器、轉譯器，能夠使軟體開發者以偏好的程式語言或風格來寫作原始碼，再透過 Babel 編譯器將其轉為 JavaScript。
 
@@ -26,25 +28,29 @@ React.createElement("a", {href: "https://github.com/Dalufishe"} );
 // 被 Babel 編譯器轉換成的 純 JS 代碼 
 ```
 
+---
+
 ## 標籤
 
-+ 和 XML 的語法絕大部分重疊。如 :
++ JSX 標籤是 <> 中放入一段文字，就像 XML 的標籤一樣。
+  + 一段有意義的 XML 語句被稱作元素，通常是由起始標籤和結尾標籤加上內容所組成。
+  + 當該元素沒有內容，結尾標籤可被省略，被稱作空白元素。
+
++ JSX 標籤支持 XML 標籤和 React 組件標籤。
+  + XML 標籤 : 和 XML 大致重疊。
+  + [組件標籤](./2-Component.md) : 標籤內放入 React 組件名稱，首字一定要大寫。
 
 ```js
-<p>hello</p>
-
-// 文章區塊元素
-
-<a>a link</a>
-
-// 超連結元素
-
 <input />
 
 // 輸入框元素
+
+<MyButton />
+
+// React 組件標籤
 ```
 
-+ JSX 標籤支持 XML 標籤和 [React 組件](./2-Component.md)標籤。
+---
 
 ## 使用 JS
 
@@ -58,6 +64,18 @@ React.render(<div>{ x + y }<div>, ...)
 ```
 
 + 曲括號運算提供了寬容的轉換方式，許多資料型態都可被轉為能在頁面上顯示的資料。
+
+---
+
+## 註解
+
++ 在 JSX 語法使用註解的原理是在其中寫 JS 語句 並設置註解。
+
+```jsx
+<div>{/* 這是註解 */}</div>
+```
+
+---
 
 ## 屬性
 
@@ -74,6 +92,19 @@ React.render(<div>{ x + y }<div>, ...)
         color: "red",
         display: "absolute",   
     }}
-    onClick={{console.log("yes? Apple!")}}
+    onClick={
+    console.log("yes? Apple!")}
 >apple</span>
 ```
+
+---
+
+## 事件處理器
+
++ 事件處理器可透過事件屬性進行綁定。
++ 在 React 中的事件是透過事件委託 (統一將事件掛載到跟元素上, #root )實作。
+  + 然而 React 將事件細節 (如 evt 行參) 模擬成個別元素的事件去做回應，當作甚麼都沒發生一樣。
+
+---
+
+## 下一篇 : [React 組件](./2-Component.md)

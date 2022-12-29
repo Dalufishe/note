@@ -5,11 +5,15 @@ src="https://ms314006.github.io/static/b7a8f321b0bbc07ca9b9d22a7a505ed5/97b31/Re
 height="120px"
 style="margin-left: 20px">
 
+---
+
 ## 學前須知
 
 + React 是 *用來實作使用者介面 ( UI ) 的 JavaScript 函式庫* - by [React官網](https://reactjs.org/)
 + React 實際上僅為 JS 函式庫，需搭配其他第三方函式庫 (如狀態管理) 完善框架體系。
 + 閱讀本章需有熟練 JavaScript 及 ES6 語言標準，及 HTML 和 CSS 基礎。
+
+---
 
 ## 簡介
 
@@ -17,6 +21,8 @@ style="margin-left: 20px">
 + 由 FaceBook, Jordan Walke 創造，並與開源社群協同開發維護。
 + 為開放原始碼的 Javascript 函式庫。
 + 世界上最廣泛使用的前湍網頁框架。
+
+---
 
 ## 特色
 
@@ -40,6 +46,8 @@ style="margin-left: 20px">
 + 使用 React語法進行移動端 :
   + 學會React，可使用 React Nactive 開發移動端。
 
+---
+
 ## 安裝
 
 + 安裝 [NodeJS](https://nodejs.org/en/)。
@@ -52,6 +60,8 @@ $ npx create-react-app my-app
 ```
 
 + 開始你的 React之旅
+
+---
 
 ## Hello World
 
@@ -72,5 +82,7 @@ import ReactDOM from "react-dom";
 ```js
 ReactDOM.render(<div>Hello World</div>, document.getElementbyId("root"))
 ```
+
+---
 
 ## 下一篇 : [JSX 語法](./1-JSX.md)
