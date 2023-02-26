@@ -2,7 +2,7 @@
 
 <img
 src="https://ms314006.github.io/static/b7a8f321b0bbc07ca9b9d22a7a505ed5/97b31/React.jpg"
-height="120px"
+height="180px"
 style="margin-left: 20px">
 
 ---
@@ -11,7 +11,8 @@ style="margin-left: 20px">
 
 + React 是 *用來實作使用者介面 ( UI ) 的 JavaScript 函式庫* - by [React官網](https://reactjs.org/)
 + React 實際上僅為 JS 函式庫，需搭配其他第三方函式庫 (如狀態管理) 完善框架體系。
-+ 閱讀本章需有熟練 JavaScript 及 ES6 語言標準，及 HTML 和 CSS 基礎。
++ 學習 React 需有熟練 JavaScript 及 ES6 語言標準，及 HTML 和 CSS 基礎。
++ 快速認識 React [點擊這裡 ( React in 100 Seconds )](https://www.youtube.com/watch?v=Tn6-PIqc4UM&t=30s&ab_channel=Fireship)。
 
 ---
 

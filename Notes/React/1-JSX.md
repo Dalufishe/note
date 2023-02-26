@@ -2,7 +2,7 @@
 
 <img
 src="https://blog.waterstrong.me/assets/jsx-syntax/jsx_logo.png"
-height="120px"
+height="180px"
 style="margin-left: 20px">
 
 ---
