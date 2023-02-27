@@ -12,4 +12,4 @@
 | :----------------------------------------------- | :------------------------------------------------------------ | :----- |
 | [React](./Notes/React/0-React.md)                | 涵蓋 React 本身，路由，狀態管理工具，組件庫等完整開發所須知識 | 未完成 |
 | [Nodejs](./Notes/Nodejs/0-Nodejs.md)             | Nodejs 伺服器，Express 框架等完整開發所須知識                 | 未完成 |
-| [TypeScript](./Notes/TypeScript/0-TypeScript.md) | TypeScript 相關語法指南                                       | 未完成 |
+| [TypeScript](./Notes/TypeScript/00-簡章.md) | TypeScript 相關語法指南                                       | 未完成 |
